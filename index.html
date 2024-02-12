@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images.png">
+    <title>مواقيت الصلاة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+<script type="module" src="salat01.js"></script>
+
+<style>
+        body{
+            background: linear-gradient(45deg,hwb(147 0% 60%),#00111c);
+        }
+        #city-name{
+            font-size: 100px;
+            color: white;
+            font-family: "Tajawal", sans-serif;
+        }
+        h1,h2,h3,h4,h5,h6{
+            margin: 0px;
+        }
+        .card{
+            width: 13%;
+            height: 95%;
+            background-color: white;
+            font-size: 20px;
+            box-shadow: 0px 10px 5px rgb(0, 0, 0 / 30%);
+            display: flexbox;
+
+        }
+        .headr{
+            background: linear-gradient(45deg,#950fa4,#00e161);
+        color: white;
+        }
+        .center{
+            display: flex;
+justify-content: center;
+align-items: center;
+
+        }
+        .time{
+            font-size: 70px;
+        }
+        #wilaya1{
+            display: flex;
+justify-content: center;
+align-items: center;
+}
+.poiwer{
+    margin: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+    color: white;
+    display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+    </style>
+</head>
+<body style=" direction: ltr" >
+    <div>
+        <div style="height: 100vh;">
+            <div style="color: white;">
+                <h1 id="city-name">Adrar</h1>
+                <h6  id ="dayy"style="font-size: 40px;font-weight: 200;direction: ltr"></h6>
+            </div>
+            <hr style="margin: 0px 50px;border: color #5200e1; ">
+        <div>
+            <div class="center" style="height: 300px;margin-top: 80px;justify-content: space-around;">
+            <div class="card">
+
+                <div class="headr">
+                    <h1  style="font-weight: 400;padding: 5px;">الفجر</h1>
+                </div>
+                <div class="body center"style="height:80% ;">
+                    <h1 class="time" id="fajr"></h1>
+                </div>
+            </div>
+             <div class="card">
+
+                <div class="headr">
+                    <h1 style="font-weight: 400;padding: 5px;">الظهر</h1></div>
+                <div class="body center"style="height:80% ;">
+                    <h1 class="time" id="dohr"></h1>
+                </div>
+            </div>
+            <div class="card">
+
+                <div class="headr">
+                    <h1 style="font-weight: 400;padding: 5px;">العصر</h1></div>
+                <div class="body center"style="height:80% ;">
+                    <h1 class="time" id="asr"></h1>
+                </div>
+            </div> <div class="card">
+
+                <div class="headr">
+                    <h1 style="font-weight: 400;padding: 5px;">المغرب</h1></div>
+                <div class="body center"style="height:80% ;">
+                    <h1 class="time" id="maghrib"></h1>
+                </div>
+            </div> <div class="card">
+
+                <div class="headr">
+                    <h1 style="font-weight: 400;padding: 5px;">العشاء</h1></div>
+                <div class="body center"style="height:80% ;">
+                    <h1 class="time" id="isha"></h1>
+                </div>
+
+            </div>
+            <div class="center"style="margin-top: 120px;">
+            <select id="wilaya1"style="width:300px;height: 50px;px;font-size:25px;font-family:Tajawal;background:black;color:white;padding-bottom: 5px;border-radius:20px">
+                <!-- <option value="">بشار</option>
+                <option value="">بشار</option>
+                <option value="">بشار</option> -->
+
+            </select>
+        </div>
+        
+        </div>
+      <div class="poiwer">POWERED BY: OUAHABI ABDESSAMED </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
